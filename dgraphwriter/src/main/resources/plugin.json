@@ -1,0 +1,6 @@
+{
+    "name": "dgraphwriter",
+    "class": "com.alibaba.datax.plugin.writer.dgraphwriter.DgraphWriter",
+    "description": "Via dgraph connect dgraph write data.",
+    "developer": "niekl"
+}
