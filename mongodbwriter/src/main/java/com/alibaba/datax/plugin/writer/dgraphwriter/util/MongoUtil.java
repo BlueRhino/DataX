@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.writer.mongodbwriter.util;
+package com.alibaba.datax.plugin.writer.dgraphwriter.util;
 
 import com.alibaba.datax.common.exception.DataXException;
 import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.mongodbwriter.KeyConstant;
-import com.alibaba.datax.plugin.writer.mongodbwriter.MongoDBWriterErrorCode;
+import com.alibaba.datax.plugin.writer.dgraphwriter.KeyConstant;
+import com.alibaba.datax.plugin.writer.dgraphwriter.MongoDBWriterErrorCode;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;

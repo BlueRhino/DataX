@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.mongodbwriter;
+package com.alibaba.datax.plugin.writer.dgraphwriter;
 
 import com.alibaba.datax.common.spi.Writer;
 
