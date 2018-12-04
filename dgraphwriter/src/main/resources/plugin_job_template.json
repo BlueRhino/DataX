@@ -1,15 +1,61 @@
 {
-    "name": "dgraphwriter",
-    "parameter": {
-        "address": [],
-        "userName": "",
-        "userPassword": "",
-        "dbName": "",
-        "collectionName": "",
-        "column": [],
-        "upsertInfo": {
-            "isUpsert": "",
-            "upsertKey": ""
-        }
-    }
+  "name": "dgraphwriter",
+  "parameter": {
+    "address": [],
+    "schema": [],
+    "entities": [
+      {
+        "name": "person",
+        "primary_key": "id",
+        "attributes": [
+          {
+            "name": "id",
+            "type": "string",
+            "source_index": 0
+          },
+          {
+            "name": "age",
+            "type": "int",
+            "source_index": 1
+          },
+          {
+            "name": "aliases",
+            "type": "Array",
+            "splitter": ",",
+            "element_type": "string",
+            "source_index": 2
+          }
+        ]
+      },
+      {
+        "name": "car",
+        "primary_key": "car_id",
+        "attributes": [
+          {
+            "name": "id",
+            "type": "string",
+            "source_index": 3
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "from": "person",
+        "to": "car",
+        "predicate": [
+          {
+            "name": "buying",
+            "facets": [
+              {
+                "name": "time",
+                "type": "date",
+                "source_index": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
